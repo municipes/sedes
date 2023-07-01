@@ -26,7 +26,6 @@ dependencies:
     - node.type.luogo
   module:
     - leaflet
-    - text
     - ui_patterns_field_formatters
     - user
 id: node.luogo.full
@@ -99,12 +98,13 @@ content:
       pattern_settings:
         node_full_field:
           attributes: ''
-          override_label: ''
+          override_label: Descrizione
           intro_text: ''
           label_size: ''
           heading_value: ''
           label_visible: null
           label_menu: null
+          use_card: 0
           audio: null
       pattern_variant: default
       variants_token: {  }
@@ -122,27 +122,42 @@ content:
     region: content
   field_indirizzo:
     type: pattern_formatter
-    label: above
+    label: hidden
     settings:
-      pattern: address_field
+      pattern: node_full_field
       pattern_mapping:
         'field_properties:locality':
           destination: field_city
           weight: 0
           plugin: field_properties
           source: locality
+        'field_properties:_label':
+          destination: field_label
+          weight: 1
+          plugin: field_properties
+          source: _label
         'field_properties:postal_code':
           destination: field_cap
-          weight: 1
+          weight: 2
           plugin: field_properties
           source: postal_code
         'field_properties:address_line1':
           destination: field_street
-          weight: 2
+          weight: 3
           plugin: field_properties
           source: address_line1
-      pattern_settings: {  }
-      pattern_variant: default
+      pattern_settings:
+        node_full_field:
+          attributes: ''
+          override_label: ''
+          intro_text: ''
+          label_size: ''
+          heading_value: ''
+          label_visible: null
+          label_menu: null
+          use_card: 0
+          audio: null
+      pattern_variant: address
       variants_token: {  }
     third_party_settings: {  }
     weight: 9
@@ -402,9 +417,34 @@ content:
     weight: 10
     region: content
   field_servizi_presenti_nel_luogo:
-    type: text_default
-    label: above
-    settings: {  }
+    type: pattern_formatter
+    label: hidden
+    settings:
+      pattern: node_full_field
+      pattern_mapping:
+        'field_properties:processed':
+          destination: field_value
+          weight: 0
+          plugin: field_properties
+          source: processed
+        'field_properties:_label':
+          destination: field_label
+          weight: 1
+          plugin: field_properties
+          source: _label
+      pattern_settings:
+        node_full_field:
+          attributes: ''
+          override_label: ''
+          intro_text: ''
+          label_size: ''
+          heading_value: ''
+          label_visible: null
+          label_menu: null
+          use_card: 0
+          audio: null
+      pattern_variant: default
+      variants_token: {  }
     third_party_settings: {  }
     weight: 7
     region: content
