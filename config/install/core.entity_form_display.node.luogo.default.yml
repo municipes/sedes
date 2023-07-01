@@ -12,12 +12,12 @@ dependencies:
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_modalita_di_accesso
-    - field.field.node.luogo.field_nome_alternativo
     - field.field.node.luogo.field_orario_per_il_pubblico
     - field.field.node.luogo.field_posizione_gps
     - field.field.node.luogo.field_punti_di_contatto
     - field.field.node.luogo.field_quartiere
     - field.field.node.luogo.field_servizi_presenti_nel_luogo
+    - field.field.node.luogo.field_sottotitolo
     - field.field.node.luogo.field_tipo_di_luogo
     - field.field.node.luogo.field_ulteriori_informazioni
     - field.field.node.luogo.field_unita_organizzativa
@@ -126,14 +126,6 @@ content:
     region: content
     settings:
       rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_nome_alternativo:
-    type: string_textfield
-    weight: 1
-    region: content
-    settings:
-      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_orario_per_il_pubblico:
@@ -247,6 +239,14 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_sottotitolo:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_tipo_di_luogo:

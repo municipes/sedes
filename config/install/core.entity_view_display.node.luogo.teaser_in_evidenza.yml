@@ -13,12 +13,12 @@ dependencies:
     - field.field.node.luogo.field_indirizzo
     - field.field.node.luogo.field_luoghi
     - field.field.node.luogo.field_modalita_di_accesso
-    - field.field.node.luogo.field_nome_alternativo
     - field.field.node.luogo.field_orario_per_il_pubblico
     - field.field.node.luogo.field_posizione_gps
     - field.field.node.luogo.field_punti_di_contatto
     - field.field.node.luogo.field_quartiere
     - field.field.node.luogo.field_servizi_presenti_nel_luogo
+    - field.field.node.luogo.field_sottotitolo
     - field.field.node.luogo.field_tipo_di_luogo
     - field.field.node.luogo.field_ulteriori_informazioni
     - field.field.node.luogo.field_unita_organizzativa
@@ -61,12 +61,12 @@ hidden:
   field_indirizzo: true
   field_luoghi: true
   field_modalita_di_accesso: true
-  field_nome_alternativo: true
   field_orario_per_il_pubblico: true
   field_posizione_gps: true
   field_punti_di_contatto: true
   field_quartiere: true
   field_servizi_presenti_nel_luogo: true
+  field_sottotitolo: true
   field_tipo_di_luogo: true
   field_ulteriori_informazioni: true
   field_unita_organizzativa: true
