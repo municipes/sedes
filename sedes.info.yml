@@ -13,6 +13,7 @@ dependencies:
   - field_group:field_group
   - focal_point:focal_point
   - geocoder:geocoder_address
+  - geocoder:geocoder_geofield
   - geofield:geofield
   - imce:imce
   - inline_entity_form:inline_entity_form
