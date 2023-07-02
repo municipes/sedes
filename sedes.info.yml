@@ -12,7 +12,7 @@ dependencies:
   - drupal:menu_ui
   - field_group:field_group
   - focal_point:focal_point
-  - geocoder_field:geocoder_field
+  - geocoder:geocoder_address
   - geofield:geofield
   - imce:imce
   - inline_entity_form:inline_entity_form
