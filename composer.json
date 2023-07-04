@@ -25,7 +25,6 @@
         "drupal/geocoder": "^4.9",
         "drupal/geofield": "^1.53",
         "drupal/leaflet": "^10.0",
-        "geocoder-php/nominatim-provider": "^5.7",
         "municipes/lexicum": "^1",
         "municipes/fundamentum": "^1"
     }
