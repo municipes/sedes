@@ -186,23 +186,6 @@ content:
         control: true
         options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
         automatic: true
-      geocoder:
-        control: true
-        settings:
-          autocomplete:
-            placeholder: 'Search Address'
-            title: 'Search an Address on the Map'
-          position: topright
-          input_size: 20
-          providers:
-            openstreetmap:
-              weight: 0
-              checked: true
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
       geometry_validation: 0
       feature_properties:
         values: ''

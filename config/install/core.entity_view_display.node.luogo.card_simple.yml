@@ -136,20 +136,6 @@ content:
       path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
       feature_properties:
         values: ''
-      geocoder:
-        control: false
-        settings:
-          autocomplete:
-            placeholder: 'Search Address'
-            title: 'Search an Address on the Map'
-          position: topright
-          input_size: 20
-          providers: {  }
-          min_terms: 4
-          delay: 800
-          zoom: 16
-          popup: false
-          options: ''
       map_lazy_load:
         lazy_load: false
       weight: null
